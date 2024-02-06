@@ -1,0 +1,58 @@
+body {
+    text-align: left;
+	background-image:url(SelfReg02.jpg);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+form {
+    background-color: #9E7CF8;
+    border-radius: 1rem;
+    display: inline-block;
+    padding: 3rem;
+	width: 50%;
+}
+
+.error {
+    background-color: red;
+    border: 2px black solid;
+    display: block;
+    color: aliceblue;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+

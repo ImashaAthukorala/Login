@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Student Registration Form.</h1>
+    <form onsubmit="return validateForm()">
+        <label>First Name</label>
+        <br>
+        <input type="text" name="f-name" id="f-name" placeholder="Enter Your first name." required onchange="maxChar()">
+        <br>
+        <label>Last Name</label>
+        <br>
+        <input type="text" name="l-name" id="l-name" placeholder="Enter Your last name." required onchange="maxChar()">
+        <br>
+        <label>Date of Birth</label>
+        <br>
+        <input type="date" name="dob" id="dob" "Enter Your Birth Day" required onchange="Calage()">
+        <br>
+        <label>Age</label>
+        <br>
+        <input type="number" name="age" id="age" required disabled>
+        <br>
+        <label>Address</label>
+        <br>
+        <input type="text" "Enter Your Address." name="add" id="add">
+        <br>
+        <label>Email Address</label>
+        <br>
+        <input type="email" name="email" id="email" "Enter Your Email." required onchange="validateEmail()">
+        <br>
+        <label>UserName</label>
+        <br>
+        <input type="text" name="username" id="username" "Enter Your Username." required onchange="userName()">
+        <br>
+        <label>Password</label>
+        <br>
+        <input type="password" name="pwd" id="pwd" "Enter Your Password." required onchange="pwdValidation()">
+        <br>
+        <label>Confirm Password</label>
+        <br>
+        <input type="password" name="cnf-pwd" id="cnf-pwd" "Enter again Your Password." required onchange="pwdMatch()">
+        <br>
+        <input type="checkbox" name="ag" id="ag" required onchange="condition()">
+        <label>Agree to all conditions of the university</label>
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT ALL" id="su-button" disabled>
+        <div id="error" class="hide"></div>
+    </form>
+</body>
+
+</html>
